@@ -1,0 +1,42 @@
+package homework;
+
+import java.util.Scanner; // Import the Scanner class
+public class dayWeek {
+	public static void main (String[] args)
+	{
+		Scanner SC = new Scanner (System.in);
+		System.out.println("input letter:");
+	int number = SC.nextInt();
+	System.out.println(DayoftheNumber(number));
+	 }
+	public static String DayoftheNumber(int number)
+	{ String Dayletter = "";
+	switch(number) {
+
+	case 1: Dayletter = "Monday"; break;
+
+    case 2: Dayletter = "Tuesday"; break;
+
+    case 3: Dayletter = "Wednesday"; break;
+
+    case 4: Dayletter = "Thursday"; break;
+
+    case 5: Dayletter= "Friday"; break;
+
+    case 6: Dayletter= "Saturday"; break;
+
+    case 7: Dayletter = "Sunday"; break;
+
+    default:Dayletter = "Invalid day range";
+    
+    break;
+
+	}
+	
+	return Dayletter;
+	
+		
+	
+	}
+}
+	
